@@ -2115,7 +2115,7 @@ var Constants = {
    * @name Two.PublishDate
    * @property {String} - The automatically generated publish date in the build process to verify version release candidates.
    */
-  PublishDate: '2020-06-02T09:02:31.879Z',
+  PublishDate: '2020-06-02T09:14:32.084Z',
 
   /**
    * @name Two.Identifier
@@ -6051,9 +6051,7 @@ _.extend(Texture, {
    * @nota-bene - This function uses node's `fs.readFileSync` to spoof the `<img />` loading process in the browser.
    */
   loadHeadlessBuffer: function(texture, loaded) {
-    
-    var regex = /^\s*data:([a-z]+\/[a-z]+(;[a-z\-]+\=[a-z\-]+)?)?(;base64)?,[a-z0-9\!\$\&\'\,\(\)\*\+\,\;\=\-\.\_\~\:\@\/\?\%\s]*\s*$/i;
-    if (!!texture.src.match(regex)) {
+    if (!!texture.src.match(/^\s*data:([a-z]+\/[a-z]+(;[a-z\-]+\=[a-z\-]+)?)?(;base64)?,[a-z0-9\!\$\&\'\,\(\)\*\+\,\;\=\-\.\_\~\:\@\/\?\%\s]*\s*$/i)) {
       console.log(texture);
     } else {
       var fs = require("fs");

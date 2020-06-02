@@ -146,9 +146,7 @@ _.extend(Texture, {
    * @nota-bene - This function uses node's `fs.readFileSync` to spoof the `<img />` loading process in the browser.
    */
   loadHeadlessBuffer: function(texture, loaded) {
-    
-    var regex = /^\s*data:([a-z]+\/[a-z]+(;[a-z\-]+\=[a-z\-]+)?)?(;base64)?,[a-z0-9\!\$\&\'\,\(\)\*\+\,\;\=\-\.\_\~\:\@\/\?\%\s]*\s*$/i;
-    if (!!texture.src.match(regex)) {
+    if (!!texture.src.match(/^\s*data:([a-z]+\/[a-z]+(;[a-z\-]+\=[a-z\-]+)?)?(;base64)?,[a-z0-9\!\$\&\'\,\(\)\*\+\,\;\=\-\.\_\~\:\@\/\?\%\s]*\s*$/i)) {
       console.log(texture);
     } else {
       var fs = require("fs");
