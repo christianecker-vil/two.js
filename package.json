@@ -1,5 +1,5 @@
 {
-  "name": "@jonobr1/two.js",
+  "name": "@christianecker-vil/two.js",
   "version": "v0.8.0-dev",
   "description": "A renderer agnostic two-dimensional drawing api for the web.",
   "module": "build/two.module.js",
@@ -48,7 +48,7 @@
   "main": "build/two.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonobr1/two.js"
+    "url": "https://github.com/christianecker-vil/two.js"
   },
   "bugs": {
     "url": "https://github.com/jonobr1/two.js/issues"
