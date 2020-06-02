@@ -2121,7 +2121,7 @@ SOFTWARE.
      * @name Two.PublishDate
      * @property {String} - The automatically generated publish date in the build process to verify version release candidates.
      */
-    PublishDate: '2020-06-02T09:39:11.392Z',
+    PublishDate: '2020-06-02T09:46:21.037Z',
 
     /**
      * @name Two.Identifier
@@ -6059,7 +6059,7 @@ SOFTWARE.
     loadHeadlessBuffer: function(texture, loaded) {
       {
         console.log(texture);
-        texture.image.src = texture;
+        texture.image = texture;
       }
       loaded();
 

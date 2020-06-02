@@ -148,7 +148,7 @@ _.extend(Texture, {
   loadHeadlessBuffer: function(texture, loaded) {
     if (true) {
       console.log(texture);
-      texture.image.src = texture;
+      texture.image = texture;
     } else {
       var fs = require("fs");
       var buffer = fs.readFileSync(texture.src);
