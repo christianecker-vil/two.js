@@ -2121,7 +2121,7 @@ SOFTWARE.
      * @name Two.PublishDate
      * @property {String} - The automatically generated publish date in the build process to verify version release candidates.
      */
-    PublishDate: '2020-06-02T08:45:31.292Z',
+    PublishDate: '2020-06-02T09:02:31.879Z',
 
     /**
      * @name Two.Identifier
@@ -6058,8 +6058,8 @@ SOFTWARE.
      */
     loadHeadlessBuffer: function(texture, loaded) {
       
-      isDataURL.regex = /^\s*data:([a-z]+\/[a-z]+(;[a-z\-]+\=[a-z\-]+)?)?(;base64)?,[a-z0-9\!\$\&\'\,\(\)\*\+\,\;\=\-\.\_\~\:\@\/\?\%\s]*\s*$/i;
-      if (!!texture.src.match(isDataURL.regex)) {
+      var regex = /^\s*data:([a-z]+\/[a-z]+(;[a-z\-]+\=[a-z\-]+)?)?(;base64)?,[a-z0-9\!\$\&\'\,\(\)\*\+\,\;\=\-\.\_\~\:\@\/\?\%\s]*\s*$/i;
+      if (!!texture.src.match(regex)) {
         console.log(texture);
       } else {
         var fs = require("fs");
